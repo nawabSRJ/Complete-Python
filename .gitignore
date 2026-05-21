@@ -1,0 +1,10 @@
+.env
+myenv/
+node_modules/
+dist/
+build/
+__pyacache__/
+.zip
+*.log
+*.tmp
+
