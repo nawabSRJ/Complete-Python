@@ -66,6 +66,15 @@ b = 10
 print(a is b)   # ! returns True if both operands point to same memory location
 print(a is not b)   # ! return True if both operands point to diff. memory location
 
+# * Membership Operators
+print("\n\nMembership Operators\n\n")
+my_list = [1,2,3,4,5]
+print(f'3 in {my_list} is : ',3 in my_list)   # ! returns True if value is found in the sequence
+print(f'6 in {my_list} is : ',6 in my_list)   # ! returns False if value is not found in the sequence
+print(f'6 not in {my_list} is : ',6 not in my_list)   # ! returns True if value is not found in
+
+
+
 # * can also use id() function to determine memory location
 
 print(id(a) , id(b))
