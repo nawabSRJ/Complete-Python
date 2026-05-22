@@ -22,3 +22,15 @@ elif age < 18 and age >= 10:
     print('Not the right age')
 else:
     print('Can re-name automatically')
+
+# Short Hand if-else
+print('Eligible for Re-naming') if len(name) < 3 else print('No need for Re-naming')
+
+
+# more examples on this : 
+a = 5
+b = 5
+c = 7
+print(9) if a > b else print(-9) 
+
+print("A") if a > b else print("=") if a == b else print("B") if a < c else print("ghanta")
