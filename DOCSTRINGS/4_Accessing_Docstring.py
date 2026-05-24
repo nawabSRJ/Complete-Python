@@ -54,10 +54,10 @@ print(Student.__doc__)
 # =========================================================
 
 # Uncomment these lines to see detailed documentation output
-
-# help(greet)
-# help(add)
-# help(Student)
+print('From help() function:')
+help(greet)
+help(square)
+help(Student)
 
 
 # =========================================================
