@@ -28,3 +28,7 @@ else:
 
 finally:
     print('Finally Block on error')
+
+
+# ? Note on finally block : 
+# * The finally keyword in Python is used to define a block of code that will be executed no matter what, whether an exception occurs or not. It is often used for cleanup operations, ensuring that certain actions are taken regardless of whether an exception is raised or a return statement is passed

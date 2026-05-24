@@ -67,6 +67,14 @@ except:
 
 # ! Why are multiple except block allowed?
 # ? Because in the same try block there can be multiple specific exceptions that can be raised or can occur
+# * Trick : Multiple exceptions can be given in form of a tuple instead of raising each one in different except block
+while True:
+    try :
+        n = int(input('Enter a number : '))
+        break
+    except (ArithmeticError , ValueError , ZeroDivisionError):
+        print('Invalid Type')
 
-
-
+    # you can write like this also, but the control won't reach here, just for the sake of knowledge, but this is better approach when using this tuple method since we can access what error it is
+    except (ArithmeticError , ValueError , ZeroDivisionError) as e:
+        print(e)
