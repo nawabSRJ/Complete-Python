@@ -13,8 +13,9 @@ print()
 p1.display()
 print()
 del p1.age  # * deletes the age contained in the object
-p1.display()    # ! object has no attribute age 
-
+# p1.display()    # ! object has no attribute age 
+print()
+p2 = Person('Johnny',26)
 
 
 

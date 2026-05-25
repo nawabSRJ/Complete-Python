@@ -1,5 +1,5 @@
 # Demonstrating some magic (dunder) methods to control object behavior
-#
+
 # Dunder methods are special methods with double underscores before and after the name.
 # They allow custom classes to behave like built-in Python types.
 # Practical use cases:
