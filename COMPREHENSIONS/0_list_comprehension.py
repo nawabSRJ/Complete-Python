@@ -58,11 +58,7 @@ print('Result using loop : ', result)
 # using list comprehension
 print([n**2 for n in nums if n%2==0 and n**2 > 10])
 
-
-
-
-
-
+# ==============================================
 # ! Trade offs
 # * List comprehension provides performance benefits (see file list_comp_speed.png) but it decreases readability
 # * We have to decide where to optimize what
