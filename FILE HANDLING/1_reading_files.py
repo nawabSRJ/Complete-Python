@@ -54,6 +54,9 @@ print("\n4. Using for loop - memory efficient line iteration:")
 with open('sample_text.txt', 'r') as file:
     for index, line in enumerate(file, start=1):
         print(f"Line {index}: {repr(line)}")
+# ? 'start=1' just tells the enumerate function to put index 0 as 1 so when the lines print out we see 1 and not 0. We can put any numeric value at start. Also, that won't change the starting point of file content, that will remain same. We can also give negative values to start.
+
+
 
 # 5. Stripping newline characters
 # ================================
