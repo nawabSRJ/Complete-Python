@@ -1,0 +1,4 @@
+Line 1: Introduction to Python
+Line 2: Python is versatile
+Line 3: File handling is important
+Line 4: Reading files is fundamental

@@ -5,6 +5,8 @@ gender = 'M'
 single = True
 weight = 70.5
 a = 1,7234  # *no error on assigning a numeric value with comma but this will not be considered as a numeric value instead as a tuple
+plex = 3+4j
+
 
 print('Number:', num, type(num))
 print('Name:', name, type(name))
@@ -12,6 +14,9 @@ print('Surname:', surname, type(surname))
 print('Gender:', gender, type(gender))
 print('Single:', single, type(single))
 print('Weight:', weight, type(weight))
+print('Complex Numbers : ', type(plex))
+print(plex.real)
+print(plex.imag)
 
 # -------------- Collection Data Types --------------
 # Also covered in COLLECTIONS folder
