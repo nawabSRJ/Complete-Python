@@ -29,11 +29,11 @@ print("After extend('abc'):", numbers)
 
 # difference with append
 test = [1, 2]
-test.append([3, 4])
+test.append([3, 4]) # get's appended as a list
 print("\nUsing append([3, 4]) on [1, 2]:", test)
 
 test2 = [1, 2]
-test2.extend([3, 4])
+test2.extend([3, 4])    # get's appended as separate elements
 print("Using extend([3, 4]) on [1, 2]:", test2)
 
 print("\n" + "=" * 60)
@@ -49,7 +49,7 @@ letters.insert(0, 'z')
 print("After insert(0, 'z'):", letters)
 
 letters.insert(100, 'end')
-print("After insert(100, 'end') [index out of range]:", letters)
+print("After insert(100, 'end') [index out of range]:", letters)    # ! No ERROR, just puts at the last index
 
 print("\n" + "=" * 60)
 print("remove() - Remove first occurrence by value")

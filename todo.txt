@@ -1,0 +1,11 @@
+- modules : 
+        1 - os
+        2 - csv
+        3 - json
+        4 - time
+        5 - math
+        6 - random
+        7 - functools
+
+- shallow copy vs deep copy and list copying
+

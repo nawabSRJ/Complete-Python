@@ -4,7 +4,7 @@
 from functools import reduce
 
 numbers = [1, 2, 3, 4]
-product = reduce(lambda x, y: x * y, numbers)
+product = reduce(lambda x, y: x * y, numbers, 1)  # Start with 1 as the initial value
 print('Product:', product)
 
 # Example: build a concatenated string from a list

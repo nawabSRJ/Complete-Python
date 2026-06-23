@@ -57,7 +57,7 @@ with open('students.json', 'w') as file:
 with open('students.json', 'r') as file:
     students = json.load(file)
     for student in students:
-        print(f\"  {student['name']} from {student['city']}\")
+        print(f"  {student['name']} from {student['city']}")
 
 # 5. Converting Python objects to JSON
 # =====================================
@@ -79,7 +79,7 @@ print("\n5. Parsing JSON string:")
 json_text = '{\"name\": \"Alice\", \"age\": 25, \"city\": \"London\"}'
 parsed_data = json.loads(json_text)
 print(f"Parsed data: {parsed_data}")
-print(f\"Name: {parsed_data['name']}\")
+print(f"Name: {parsed_data['name']}")
 
 # 7. Handling nested JSON
 # =======================
@@ -102,10 +102,10 @@ with open('company.json', 'w') as file:
 # Read and access nested data
 with open('company.json', 'r') as file:
     company = json.load(file)
-    print(f\"Company: {company['name']}\")
-    print(\"Employees:\")
+    print(f"Company: {company['name']}")
+    print("Employees:")
     for emp in company['employees']:
-        print(f\"  - {emp['name']} ({emp['role']})\")
+        print(f"  - {emp['name']} ({emp['role']})")
 
 # 8. Adding to existing JSON file
 # ================================

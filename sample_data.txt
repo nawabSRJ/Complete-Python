@@ -1,3 +1,0 @@
-hi there
-my name is Srajan Saxena
-This is our python tutorial

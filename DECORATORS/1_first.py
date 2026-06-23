@@ -5,18 +5,19 @@
 # ! This decoration could have been done within the same function, why use decorators?
 # ? Because that destroys the 'principle of single responsibility' and if that decoration is needed in many functions then we need to write the same 'decoration' code in all of them which leads to code redundancy, thereby impacting code maintainability
 
-# * example : brew_tea and make_match while also telling how much time each of them takes ~ a simple example that can help us understand how decorators work
+# * example : brew_tea and make_matcha while also telling how much time each of them takes ~ a simple example that can help us understand how decorators work
 
 import time
 
 
+# decorators take the function in args that they enhance
 def timer_dec(base_fn):
     def enhanced_fn():
         start_time = time.time()
         base_fn()
         end_time = time.time()
         print(f'Time taken : {end_time - start_time} seconds')
-    return enhanced_fn
+    return enhanced_fn  # the enhanced function is always returned otherwise the decorator won't work at all and returns None thus an ERROR
 
 # * decorators are declared first before the actual function on which they are used
 
@@ -39,7 +40,6 @@ def make_matcha():
     print('Matcha is Ready!')
 
 make_matcha()
-
 # TODO : In second.py we will see how to use decorators with functions who have arguments
 
 

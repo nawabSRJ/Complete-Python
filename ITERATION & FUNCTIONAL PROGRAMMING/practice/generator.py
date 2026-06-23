@@ -1,0 +1,23 @@
+# todo : use generator function to print prime numbers up to n
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def prime_generator(n):
+    for num in range(2, n + 1):
+        if is_prime(num):
+            yield num   
+
+prime_values = prime_generator(10)
+print(next(prime_values))
+print(next(prime_values))
+print(next(prime_values))
+print(next(prime_values))
+# print(next(prime_values)) # ! StopIteration Error
+
+
+

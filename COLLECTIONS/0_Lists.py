@@ -9,8 +9,8 @@ print("=" * 60)
 my_list = [1, 2, 3, 4, 5]
 print("Basic list creation:", my_list)
 
-mixed_list = [1, "hello", 3.14, True, None]
-print("\nMixed types in a list:", mixed_list)
+mixed_list = [1, "hello", 3.14, True, None, {'id':1, 'name':'Srajan'}]
+print("\nMixed types in a list:", mixed_list)   # can hold multiple data, even other collections
 
 empty_list = []
 list_from_range = list(range(5))
@@ -18,6 +18,8 @@ print("List from range(5):", list_from_range)
 
 list_from_string = list("abc")
 print("List from string 'abc':", list_from_string)
+
+# ======================================================
 
 print("\n" + "=" * 60)
 print("INDEXING AND SLICING")
@@ -31,6 +33,8 @@ print("Slice [1:3] (inclusive start, exclusive end):", numbers[1:3])
 print("Slice [::2] (every second element):", numbers[::2])
 print("Slice [::-1] (reversed):", numbers[::-1])
 
+# ==========================================================
+
 print("\n" + "=" * 60)
 print("MUTABILITY - LISTS ARE MUTABLE")
 print("=" * 60)
@@ -42,7 +46,7 @@ print("After letters[0] = 'z':", letters)
 
 letters[1:3] = ['x', 'y', 'w']
 print("After letters[1:3] = ['x', 'y', 'w']:", letters)
-
+# ================================================
 print("\n" + "=" * 60)
 print("MEMBERSHIP AND LENGTH")
 print("=" * 60)
@@ -52,6 +56,8 @@ print("List:", fruits)
 print("'apple' in fruits:", 'apple' in fruits)
 print("'grape' in fruits:", 'grape' in fruits)
 print("Length of list:", len(fruits))
+
+# =====================================================
 
 print("\n" + "=" * 60)
 print("BASIC LIST OPERATIONS")
@@ -67,6 +73,10 @@ print("Concatenation (list_a + list_b):", concatenated)
 
 repeated = [0] * 3
 print("Repetition ([0] * 3):", repeated)
+lst = [1,2,3]
+print('lst * 3 is : ',lst * 3)
+
+# ====================================================
 
 print("\n" + "=" * 60)
 print("UNPACKING - ASSIGNING LIST ELEMENTS TO VARIABLES")
@@ -82,6 +92,8 @@ first, *middle, last = [1, 2, 3, 4, 5]
 print("\nUnpacking [1, 2, 3, 4, 5] with first, *middle, last:")
 print(f"  first={first}, middle={middle}, last={last}")
 
+# ======================================================
+
 print("\n" + "=" * 60)
 print("ITERATION")
 print("=" * 60)
@@ -93,6 +105,8 @@ for item in [10, 20, 30]:
 print("\nIterating with enumerate (index and value):")
 for index, item in enumerate(['a', 'b', 'c']):
     print(f"  Index {index}: {item}")
+
+# =====================================================
 
 print("\n" + "=" * 60)
 print("IMPORTANT: REFERENCE VS COPY")
@@ -113,12 +127,14 @@ print("After copy[1] = 999:")
 print(f"  original: {original} (unchanged because copy is separate)")
 print(f"  copy: {copy}")
 
+# ======================================================
+
 print("\n" + "=" * 60)
 print("TYPE CHECKING")
 print("=" * 60)
 
 my_list = [1, 2, 3]
-print("my_list = [1, 2, 3]")
+print(f"my_list = {my_list}")
 print("type(my_list):", type(my_list))
 print("isinstance(my_list, list):", isinstance(my_list, list))
 
@@ -126,4 +142,10 @@ my_tuple = (1, 2, 3)
 print("\nmy_tuple = (1, 2, 3)")
 print("type(my_tuple):", type(my_tuple))
 print("isinstance(my_tuple, list):", isinstance(my_tuple, list))
+
+# ! Note : what does isinstance function do in python : 
+# * isinstance() is used to check whether an object belongs to a particular class (or data type).
+# * Syntax : isinstance(object, classinfo)
+# * True → if the object is an instance of the specified class/type
+# * False → otherwise
 

@@ -4,6 +4,8 @@ import time
 
 # * Now because the base function brew_tea takes 2 positional args we need to adjust the header of the enhanced_fn in a similar manner to do that
 
+# ! Note : the header of base function impacts the header of enhanced function
+
 def timer_dec(base_fn):
     def enhanced_fn(tea_type, steep_time):
         start_time = time.time()
