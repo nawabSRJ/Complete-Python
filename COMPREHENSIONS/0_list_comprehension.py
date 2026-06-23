@@ -28,7 +28,7 @@ even_squared = [n**2 for n in nums if n % 2 == 0]
 print(even_squared) # [4,16]
 
 # ! but what if we want to keep others as it is and only square the even ones 
-# ? Simple, use else, but here there is a catch, if you have an else block as well then you need to put the condition after operation
+# ? Simple, use else, but there is a catch, if you have an else block as well then you need to put the condition after operation
 # ? If there is no else condition then you need to make sure that it is part4
 
 result = [n**2 if n % 2 == 0 else n for n in nums]
