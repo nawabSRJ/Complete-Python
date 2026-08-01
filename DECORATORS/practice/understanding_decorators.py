@@ -2,9 +2,9 @@
 
 def decorator(func):
 
-    def wrapper():
+    def wrapper(*args):
         print("Before")
-        func()
+        func(*args)
         print("After")
         
 
@@ -15,7 +15,11 @@ def decorator(func):
 
 # * we have to define the decorator function first
 @decorator
-def greet():
-    print("Greetings!!")
+def greet(param, param2):
+    print("Greetings!!", param, " and ", param2)
 
-greet()
+greet("Srajan", "Pratham") # now since the decorator has been applied on this function, so internally this line is "decorator(greet)", and inside of this when wrapper is returned that is calling the actual greet function
+
+# ? Note : As a convention, the wrapper functions use *args, **kwargs 
+# because the function on which decorator is applied can have any no. of args, so it is better to use *args technique
+

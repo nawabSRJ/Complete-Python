@@ -6,7 +6,7 @@
 def brew_tea(cust_name, tea_type, *args):
     print(f'{cust_name} ordered a {tea_type}')
     print('Rest of the arguments are : ', args)
-
+    print('Type of args : ', type(args))    # tuple
 brew_tea('Srajan', 'Black')
 brew_tea('Srajan','Black', ('Oat Milk', 'Honey'))
 
